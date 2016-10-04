@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Array game</title>
+	<meta charset="utf-8" >
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div id="container">
+<header>
+	<h1>The Array Game</h1>
+</header>
+<section class="leftCol">
+	<h2>Set your Array:</h2>
+		<button id="arr1">Set Array #1</button>
+		<button id="arr2">Set Array #2</button>
+		<button id="arr3">Set Array #3</button>
+</section>
+
+<section class="resultsCol">
+	<h2 id="a1">Array #1:</h2>
+	<p id="arr1Res"></p>
+	<div class="arr1Con"><p id="x1"></p></div>
+	<h2 id="a2">Array #2:</h2>
+	<p id="arr2Res"></p>
+	<div class="arr2Con"><p id="x2"></p></div>
+	<h2 id="a3">Array #3:</h2>
+	<p id="arr3Res"></p>
+	<div class="arr3Con"><p id="x3"></p></div>
+</section>
+
+<aside class="rightCol">
+	<h2>Actions:</h2>
+		<button id="a">Sum all values</button>
+		<button id="b">Search index of item</button>
+		<button id="c">Remove an item(newArr)</button>
+		<button id="d">Remove an item</button>
+		<button id="e">Add new item(lastIndex)</button>
+		<button id="f">Remove last item</button>
+		<button id="g">Add new item(index 0)</button>
+		<button id="h">Remove item(index 0)</button>
+		<button id="i">Combine arrays</button>
+		<button id="j">Insert specific item</button>
+		<button id="k">Count item in array</button>
+		<button id="l">What items are duplicates?</button>
+		<button id="m">Square items in array</button>
+		<button id="n">Occurrences of an item</button>
+</aside>
+
+<section class="instructions">
+	<h2>Instructions</h2>
+	<ol>
+		<li>Set an array, choose how many items will be in the array and afterwards insert items (NUMERIC ONLY) in each index of the array.</li>
+		<li>After array has been declared, click on the header "Array#1/2/3" on the left side, will be highlighted in blue.</li>
+		<li>When your array is declared + you chose what array to work with (Highlighted) choose an action to work with. Results will either be written below with green color or will modify the actual array.</li>
+		<li>To reset press F5 or just re-Set array#1/2/3. You can work with different arrays at the same time, and also able to combine actions (Use common sense)</li>
+	</ol>
+</section>
+
+<footer>
+	<p>&copy Dennis Ilyaev</p>
+</footer>
+
+</div>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="actions.js"></script>
+</body>
+</html>

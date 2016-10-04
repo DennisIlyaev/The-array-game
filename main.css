@@ -1,0 +1,211 @@
+
+body {
+	text-align: center;
+	background-color: #3b5998;
+	font-family: sans-serif;
+	position: relative;
+}
+
+#container {
+	width: 80%;
+	height: 60vw;
+	border: 2px solid black;
+	margin: 0 auto;
+}
+
+li {
+	text-align: left;
+}
+
+h1 {
+	color: white;
+	text-decoration: underline;
+	font-size: 3vw;
+}
+
+h2 {
+	color: white;
+	font-size: 1.7vw;
+}
+
+#x1, #x2, #x3 {
+	color: green;
+}
+
+.leftCol {
+	float: left;
+	margin-left: 2vw;
+	margin-top: -6vw;
+}
+
+.rightCol {
+	float: right;
+	margin-right: 2vw;
+	margin-top: -6vw;
+}
+
+.resultsCol {
+	width: 40vw;
+	height: 30vw;
+	border: 2px solid black;
+	position: absolute;
+	left: 29.5vw;
+	background-color: white;
+	overflow: hidden;
+}
+
+.arr1Con {
+	width: 40vw;
+	height: 3vw;
+	border-bottom: 2px solid black;
+	position: absolute;
+	top: 6vw;
+	
+}
+
+.arr1Con p {
+	font-size: 1.5vw;
+	position: absolute;
+	top: -0.2vw;
+}
+
+.arr2Con {
+	width: 40vw;
+	height: 3vw;
+	border-bottom: 2px solid black;
+	position: absolute;
+	top: 18.1vw;
+}
+
+.arr2Con p {
+	font-size: 1.5vw;
+	position: absolute;
+	top: -0.25vw;
+}
+
+.arr3Con {
+	width: 40vw;
+	height: 3vw;
+	position: absolute;
+	top: 27vw;
+}
+
+.arr3Con p {
+	font-size: 1.5vw;
+	position: absolute;
+	top: -0.25vw;
+}
+
+.resultsCol h2#a1 {
+	color: black;
+	float: left;
+	margin-left: 1vw;
+}
+
+.resultsCol h2#a2 {
+	color: black;
+	float: left;
+	margin-left: 1vw;
+	position: absolute;
+	top: 12vw;
+}
+
+.resultsCol h2#a3 {
+	color: black;
+	float: left;
+	margin-left: 1vw;
+	position: absolute;
+	top: 24vw;
+}
+
+.resultsCol #arr1Res {
+	color: red;
+	position: absolute;
+	left: 9vw;
+	top: -0.17vw;
+	font-size: 1.6vw;
+}
+
+.resultsCol #arr2Res {
+	color: red;
+	position: absolute;
+	left: 9vw;
+	top: 11.9vw;
+	font-size: 1.6vw;
+}
+
+.resultsCol #arr3Res {
+	color: red;
+	position: absolute;
+	left: 9vw;
+	top: 23.8vw;
+	font-size: 1.6vw;
+}
+
+.leftCol button {
+	display: block;
+	width: 10vw;
+	height: 7vw;
+	font-size: 1.4vw;
+	margin-left: 1vw;
+}
+
+.rightCol button {
+	display: block;
+	width: 10vw;
+	height: 3.3vw;
+	font-size: 1.2vw;
+	margin-left: 0.5vw;
+}
+
+.rightCol button:hover {
+	background-color: orange;
+}
+
+.leftCol button:hover {
+	background-color: orange;
+}
+
+footer {
+	width: 80%;
+	height: 5vw;
+	background-color: #4682B4;
+	position: absolute;
+	bottom: 0;
+	border-bottom: 2px solid black;
+}
+
+footer p {
+	font-size: 1.5vw;
+	color: #00BFFF;
+	margin-top: 1.7vw;
+
+}
+
+.instructions {
+	position: absolute;
+	top: 40vw;
+	left: 12.5vw;
+	width: 58%;
+	height: 10vw;
+}
+
+.instructions h2 {
+	position: absolute;
+	top: -4vw;
+	color: #00BFFF;
+	text-decoration: underline;
+}
+
+.instructions ol {
+	width: 90%;
+	position: absolute;
+	top: 1vw;
+	right: 3vw;
+	font-size: 1vw;
+	float: left;
+	font-weight: bold;
+	line-height: 1.6vw;
+	color: white;
+	
+}
