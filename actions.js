@@ -1,5 +1,9 @@
 
-var obj = {
+var modularAction = modularAction || {};
+
+modularAction.Module = (function() {
+
+var _obj = {
   x: function(arr) {
     var sum = 0;
     for (var i = 0, len = arr.length; i < len; i++) {
@@ -119,4 +123,10 @@ var obj = {
       return occ;
     }
 
-};  
+};
+
+  return {
+    obj: _obj
+  }  
+
+}());
