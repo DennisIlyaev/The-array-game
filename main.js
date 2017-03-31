@@ -1,7 +1,4 @@
-var mainModule = mainModule || {}; 
-
-
-mainModule.init = (function() {
+var Module1 = (function() {
 
 var arr1 = document.getElementById('arr1'),
 	arr2 = document.getElementById('arr2'),
@@ -103,15 +100,15 @@ var arr1 = document.getElementById('arr1'),
 	 	a.style.backgroundColor = "red";
 
 	 	if (headOne.style.color === "blue") {
-	 		x1.innerHTML = modularAction.Module.obj.x(arr1);
+	 		x1.innerHTML = obj.x(arr1);
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-	 		x2.innerHTML = modularAction.Module.obj.x(arr2);
+	 		x2.innerHTML = obj.x(arr2);
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		x3.innerHTML = modularAction.Module.obj.x(arr3);
+	 		x3.innerHTML = obj.x(arr3);
 	 	}
 
 	 	headOne.style.color = "black";
@@ -132,16 +129,16 @@ var arr1 = document.getElementById('arr1'),
 	 	b.style.color = "black";
 
 	 	if (headOne.style.color === "blue") {
-	 		x1.innerHTML = 'The index of ' + indx + ' in the array is: ' + modularAction.Module.obj.index(arr1, indx);
+	 		x1.innerHTML = 'The index of ' + indx + ' in the array is: ' + obj.index(arr1, indx);
 
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-	 		x2.innerHTML = 'The index of ' + indx + ' in the array is: ' + modularAction.Module.obj.index(arr2, indx);
+	 		x2.innerHTML = 'The index of ' + indx + ' in the array is: ' + obj.index(arr2, indx);
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		x3.innerHTML = 'The index of ' + indx + ' in the array is: ' + modularAction.Module.obj.index(arr3, indx);
+	 		x3.innerHTML = 'The index of ' + indx + ' in the array is: ' + obj.index(arr3, indx);
 	 	}
 
 	 	headOne.style.color = "black";
@@ -159,16 +156,16 @@ var arr1 = document.getElementById('arr1'),
 	 	c.style.color = "black";
 
 	 	if (headOne.style.color === "blue") {
-	 		x1.innerHTML = '[' + modularAction.Module.obj.remove(arr1, indx) + ']';
+	 		x1.innerHTML = '[' + obj.remove(arr1, indx) + ']';
 
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-	 		x2.innerHTML = '[' + modularAction.Module.obj.remove(arr2, indx) + ']';
+	 		x2.innerHTML = '[' + obj.remove(arr2, indx) + ']';
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		x3.innerHTML = '[' + modularAction.Module.obj.remove(arr3, indx) + ']';
+	 		x3.innerHTML = '[' + obj.remove(arr3, indx) + ']';
 	 	}
 
 	 	headOne.style.color = "black";
@@ -186,16 +183,16 @@ var arr1 = document.getElementById('arr1'),
 	 	d.style.color = "black";
 
 	 	if (headOne.style.color === "blue") {
-	 		arr1Res.innerHTML = '[' + modularAction.Module.obj.removeWithout(arr1, indx) + ']';
+	 		arr1Res.innerHTML = '[' + obj.removeWithout(arr1, indx) + ']';
 
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-	 		arr2Res.innerHTML = '[' + modularAction.Module.obj.removeWithout(arr2, indx) + ']';
+	 		arr2Res.innerHTML = '[' + obj.removeWithout(arr2, indx) + ']';
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		arr3Res.innerHTML = '[' + modularAction.Module.obj.removeWithout(arr3, indx) + ']';
+	 		arr3Res.innerHTML = '[' + obj.removeWithout(arr3, indx) + ']';
 	 	}
 
 	 	headOne.style.color = "black";
@@ -213,15 +210,15 @@ var arr1 = document.getElementById('arr1'),
 	 	e.style.color = "black";
 
 	 	if (headOne.style.color === "blue") {
-	 		arr1Res.innerHTML = '[' + modularAction.Module.obj.append(arr1, indx) + ']';
+	 		arr1Res.innerHTML = '[' + obj.append(arr1, indx) + ']';
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-	 		arr2Res.innerHTML = '[' + modularAction.Module.obj.append(arr2, indx) + ']';
+	 		arr2Res.innerHTML = '[' + obj.append(arr2, indx) + ']';
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		arr3Res.innerHTML = '[' + modularAction.Module.obj.append(arr3, indx) + ']';
+	 		arr3Res.innerHTML = '[' + obj.append(arr3, indx) + ']';
 	 	}
 
 	 	headOne.style.color = "black";
@@ -239,15 +236,15 @@ var arr1 = document.getElementById('arr1'),
 	 	f.style.color = "black";
 	 
 	 	if (headOne.style.color === "blue") {
-	 		arr1Res.innerHTML = '[' + modularAction.Module.obj.removeLastItem(arr1) + ']';
+	 		arr1Res.innerHTML = '[' + obj.removeLastItem(arr1) + ']';
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-	 		arr2Res.innerHTML = '[' + modularAction.Module.obj.removeLastItem(arr2) + ']';
+	 		arr2Res.innerHTML = '[' + obj.removeLastItem(arr2) + ']';
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		arr3Res.innerHTML = '[' + modularAction.Module.obj.removeLastItem(arr3) + ']';
+	 		arr3Res.innerHTML = '[' + obj.removeLastItem(arr3) + ']';
 	 	}
 
 	 	headOne.style.color = "black";
@@ -267,15 +264,15 @@ var arr1 = document.getElementById('arr1'),
 	 	g.style.color = "black";
 
 	 	if (headOne.style.color === "blue") {
-	 		arr1Res.innerHTML = '[' + modularAction.Module.obj.addItemIndex0(arr1, indx) + ']';
+	 		arr1Res.innerHTML = '[' + obj.addItemIndex0(arr1, indx) + ']';
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-	 		arr2Res.innerHTML = '[' + modularAction.Module.obj.addItemIndex0(arr2, indx) + ']';
+	 		arr2Res.innerHTML = '[' + obj.addItemIndex0(arr2, indx) + ']';
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		arr3Res.innerHTML = '[' + modularAction.Module.obj.addItemIndex0(arr3, indx) + ']';
+	 		arr3Res.innerHTML = '[' + obj.addItemIndex0(arr3, indx) + ']';
 	 	}
 
 	 	headOne.style.color = "black";
@@ -293,15 +290,15 @@ var arr1 = document.getElementById('arr1'),
 	 h.style.color = "black";
 
 	 	if (headOne.style.color === "blue") {
-	 		arr1Res.innerHTML = '[' + modularAction.Module.obj.removeIndex0(arr1) + ']';
+	 		arr1Res.innerHTML = '[' + obj.removeIndex0(arr1) + ']';
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-	 		arr2Res.innerHTML = '[' + modularAction.Module.obj.removeIndex0(arr2) + ']';
+	 		arr2Res.innerHTML = '[' + obj.removeIndex0(arr2) + ']';
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		arr3Res.innerHTML = '[' + modularAction.Module.obj.removeIndex0(arr3) + ']';
+	 		arr3Res.innerHTML = '[' + obj.removeIndex0(arr3) + ']';
 	 	}
 
 	 	headOne.style.color = "black";
@@ -322,27 +319,27 @@ var arr1 = document.getElementById('arr1'),
 	 	if (headOne.style.color === "blue") {
 	 		var indx1 = parseInt(prompt("Combine array number 1 with array number? (Please insert 2 or 3)"), 10);
 	 		if (indx1 === 2) {
-	 			x1.innerHTML = '[' + modularAction.Module.obj.combineArrays(arr1, arr2) + ']';
+	 			x1.innerHTML = '[' + obj.combineArrays(arr1, arr2) + ']';
 	 		} else if (indx1 === 3) {
-	 			x1.innerHTML = '[' + modularAction.Module.obj.combineArrays(arr1, arr3) + ']';
+	 			x1.innerHTML = '[' + obj.combineArrays(arr1, arr3) + ']';
 	 		}
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
 	 		var indx2 = parseInt(prompt("Combine array number 2 with array number? (Please insert 1 or 3)"), 10);
 	 		if (indx2 === 1) {
-	 			x2.innerHTML = '[' + modularAction.Module.obj.combineArrays(arr2, arr1) + ']';
+	 			x2.innerHTML = '[' + obj.combineArrays(arr2, arr1) + ']';
 	 		} else if (indx2 === 3) {
-	 			x2.innerHTML = '[' + modularAction.Module.obj.combineArrays(arr2, arr3) + ']';
+	 			x2.innerHTML = '[' + obj.combineArrays(arr2, arr3) + ']';
 	 		}
 	 	}
 
 	 	if (headThree.style.color === "blue") {
 	 		var indx3 = parseInt(prompt("Combine array number 3 with array number? (Please insert 1 or 2)"), 10);
 	 		if (indx3 === 1) {
-	 			x3.innerHTML = '[' + modularAction.Module.obj.combineArrays(arr3, arr1) + ']';
+	 			x3.innerHTML = '[' + obj.combineArrays(arr3, arr1) + ']';
 	 		} else if (indx3 === 2) {
-	 			x3.innerHTML = '[' + modularAction.Module.obj.combineArrays(arr3, arr2) + ']';
+	 			x3.innerHTML = '[' + obj.combineArrays(arr3, arr2) + ']';
 	 		}
 	 	}
 
@@ -366,21 +363,21 @@ var arr1 = document.getElementById('arr1'),
 	 		var indx1 = parseInt(prompt("In what index would you like to add your item?"), 10),
 	 			item1 = parseInt(prompt("What's the item you want to add? (Numeric only)"), 10);
 	 	
-	 		arr1Res.innerHTML = '[' + modularAction.Module.obj.insertItem(indx1, arr1, item1) + ']';
+	 		arr1Res.innerHTML = '[' + obj.insertItem(indx1, arr1, item1) + ']';
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
 	 		var indx1 = parseInt(prompt("In what index would you like to add your item?"), 10),
 	 			item1 = parseInt(prompt("What's the item you want to add? (Numeric only)"), 10);
 	 	
-	 		arr2Res.innerHTML = '[' + modularAction.Module.obj.insertItem(indx1, arr2, item1) + ']';
+	 		arr2Res.innerHTML = '[' + obj.insertItem(indx1, arr2, item1) + ']';
 	 	}
 
 	 	if (headThree.style.color === "blue") {
 	 		var indx1 = parseInt(prompt("In what index would you like to add your item?"), 10),
 	 			item1 = parseInt(prompt("What's the item you want to add? (Numeric only)"), 10);
 	 	
-	 		arr3Res.innerHTML = '[' + modularAction.Module.obj.insertItem(indx1, arr3, item1) + ']';
+	 		arr3Res.innerHTML = '[' + obj.insertItem(indx1, arr3, item1) + ']';
 	 	}
 
 	 	headOne.style.color = "black";
@@ -398,17 +395,17 @@ var arr1 = document.getElementById('arr1'),
 
 	 	if (headOne.style.color === "blue") {
 	 		var indx1 = parseInt(prompt("What's the item you want to count in the array?"), 10);
-	 		x1.innerHTML = 'The count of ' + indx1 +' in the array is: ' + modularAction.Module.obj.count(arr1, indx1);
+	 		x1.innerHTML = 'The count of ' + indx1 +' in the array is: ' + obj.count(arr1, indx1);
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
 	 		var indx1 = parseInt(prompt("What's the item you want to count in the array?"), 10);
-	 		x2.innerHTML = 'The count of ' + indx1 +' in the array is: ' + modularAction.Module.obj.count(arr2, indx1);
+	 		x2.innerHTML = 'The count of ' + indx1 +' in the array is: ' + obj.count(arr2, indx1);
 	 	}
 
 	 	if (headThree.style.color === "blue") {
 	 		var indx1 = parseInt(prompt("What's the item you want to count in the array?"), 10);
-	 		x3.innerHTML = 'The count of ' + indx1 +' in the array is: ' + modularAction.Module.obj.count(arr3, indx1);
+	 		x3.innerHTML = 'The count of ' + indx1 +' in the array is: ' + obj.count(arr3, indx1);
 	 	}
 
 	 	headOne.style.color = "black";
@@ -425,15 +422,15 @@ var arr1 = document.getElementById('arr1'),
 	 	l.style.color = "black";
 
 	 	if (headOne.style.color === "blue") {
-	 		x1.innerHTML = 'The duplicated item/s in the array is/are: ' + modularAction.Module.obj.duplicates(arr1);
+	 		x1.innerHTML = 'The duplicated item/s in the array is/are: ' + obj.duplicates(arr1);
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-			x2.innerHTML = 'The duplicated item/s in the array is/are: ' + modularAction.Module.obj.duplicates(arr2);
+			x2.innerHTML = 'The duplicated item/s in the array is/are: ' + obj.duplicates(arr2);
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		x3.innerHTML = 'The duplicated item/s in the array is/are: ' + modularAction.Module.obj.duplicates(arr3);
+	 		x3.innerHTML = 'The duplicated item/s in the array is/are: ' + obj.duplicates(arr3);
 	 	}
 
 	 	headOne.style.color = "black";
@@ -450,17 +447,17 @@ var arr1 = document.getElementById('arr1'),
 	 m.style.backgroundColor = "red";
 	 	m.style.color = "black";
 	 	if (headOne.style.color === "blue") {
-	 		arr1 = modularAction.Module.obj.square(arr1);
+	 		arr1 = obj.square(arr1);
 	 		arr1Res.innerHTML = arr1;
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
-	 		arr2 = modularAction.Module.obj.square(arr2);
+	 		arr2 = obj.square(arr2);
 	 		arr2Res.innerHTML = arr2;
 	 	}
 
 	 	if (headThree.style.color === "blue") {
-	 		arr3 = modularAction.Module.obj.square(arr3);
+	 		arr3 = obj.square(arr3);
 	 		arr3Res.innerHTML = arr3;
 	 	}
 
@@ -481,17 +478,17 @@ var arr1 = document.getElementById('arr1'),
 
 	 	if (headOne.style.color === "blue") {
 	 		var indx1 = parseInt(prompt("What's the item you want to find it/their occurrences(indexes) in the array?"), 10);
-	 		x1.innerHTML = 'The index/es of the occurrenced item is/are: ' + modularAction.Module.obj.findAllOccurrences(arr1, indx1);
+	 		x1.innerHTML = 'The index/es of the occurrenced item is/are: ' + obj.findAllOccurrences(arr1, indx1);
 	 	}
 
 	 	if (headTwo.style.color === "blue") {
 	 		var indx1 = parseInt(prompt("What's the item you want to find it/their occurrences(indexes) in the array?"), 10);
-	 		x2.innerHTML = 'The index/es of the occurrenced item is/are: ' + modularAction.Module.obj.findAllOccurrences(arr2, indx1);
+	 		x2.innerHTML = 'The index/es of the occurrenced item is/are: ' + obj.findAllOccurrences(arr2, indx1);
 	 	}
 
 	 	if (headThree.style.color === "blue") {
 	 		var indx1 = parseInt(prompt("What's the duplicated item you want to find it/their occurrences(indexes) in the array?"), 10);
-	 		x3.innerHTML = 'The index/es of the occurrenced item is/are: ' + modularAction.Module.obj.findAllOccurrences(arr3, indx1);
+	 		x3.innerHTML = 'The index/es of the occurrenced item is/are: ' + obj.findAllOccurrences(arr3, indx1);
 	 	}
 
 	 	headOne.style.color = "black";
@@ -507,7 +504,7 @@ var arr1 = document.getElementById('arr1'),
 
 
 
-}());
+})();
 
 
 

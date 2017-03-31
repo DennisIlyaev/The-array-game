@@ -160,10 +160,12 @@ h2 {
 
 .rightCol button:hover {
 	background-color: orange;
+	transition: background-color 1s;
 }
 
 .leftCol button:hover {
 	background-color: orange;
+	transition: background-color 1s;
 }
 
 footer {
@@ -178,7 +180,7 @@ footer {
 footer p {
 	font-size: 1.5vw;
 	color: #00BFFF;
-	margin-top: 1.7vw;
+	line-height: 2.5vw;
 
 }
 
