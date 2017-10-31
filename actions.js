@@ -80,22 +80,8 @@ var obj = {
   },
   
    duplicates: function(arr) {
-     var seen = {},
-         dups = [];
-     
-     for (var i = 0, len = arr.length; i < len; i++) {
-       seen[arr[i]] = seen[arr[i]] ? seen[arr[i]] + 1 : 1;
-     }
-     
-     for (var prop in seen) {
-       if (seen.hasOwnProperty(prop) && seen[prop] > 1) {
-         dups.push(prop);
-       }
-       
-     }
-     
-     return dups;
-     
+    var dups = Array.from(new Set(arr.filter(x=> arr.indexOf(x) !== arr.lastIndexOf(x))));
+    return dups;
    },
   
     square: function(arr) {
